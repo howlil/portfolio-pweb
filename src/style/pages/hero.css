@@ -1,0 +1,148 @@
+.hero {
+    margin-top: 4rem;
+    min-height: 100vh;
+    position: relative;
+    z-index: -2;
+    background-image: linear-gradient(to bottom, #B9DFFF, #FFFFFF);
+    border-bottom-left-radius: 64px;
+    border-bottom-right-radius: 64px;
+
+}
+
+.hero-div h1 {
+    line-height: 3.5rem;
+    text-align: center;
+    font-size: var(--size-7);
+    color: var(--text-color-primary);
+    font-weight: 500;
+}
+
+.gradient-text {
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #90c1f5, #4384fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orbit-container {
+    margin-top: 4rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orbit {
+    border: 2px solid rgba(199, 218, 252, 0.502);
+    border-radius: 50%;
+    z-index: -1;
+    margin-top: 2rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-logo{z-index: 1;}
+
+.bit {
+    width: 32rem;
+    height: 32rem;
+}
+
+.bits {
+    width: 40rem;
+    height: 40rem;
+}
+
+.bitss {
+    width: 48rem;
+    height: 48rem;
+}
+
+.bit-item {
+    position: absolute;
+}
+
+.bit-item img {
+    box-shadow: 0 4px 12px rgba(26, 133, 210, 0.108);
+    border-radius: 12px;
+
+}
+
+.bit-item .icons {
+    position: absolute;
+}
+
+
+.nx {
+    right: 200px;
+    top: -50px;
+    rotate: -15deg;
+    width: 64px;
+}
+.ex {
+    right: 160px;
+    top: 140px;
+    rotate: 7deg;
+    width: 64px;
+}
+.sb {
+    right: 30px;
+    top: -20px;
+    rotate: -15deg;
+    width: 36px;
+}
+
+.vt{
+    left: 110px;
+    top: -70px;
+    rotate: 5deg;
+    width: 36px;
+}
+.pg {
+    right: 300px;
+    top: 250px;
+    rotate: -10deg;
+    width: 48px;
+}
+.pm {
+    right: 300px;
+    top: 110px;
+    rotate: -5deg;
+    width: 40px;
+}
+.ts {
+    left: 180px;
+    top: 140px;
+
+    rotate: 8deg;
+    width: 36px;
+}
+
+.rj {
+    left: 250px;
+    top: 10px;
+    rotate: -15deg;
+    width: 64px;
+}
+.js {
+    left: 290px;
+    top: 260px;
+    rotate: -8deg;
+    width: 48px;
+}
+.tw {
+    left: 350px;
+    top: 160px;    
+    rotate: -8deg;
+    width: 40px;
+}

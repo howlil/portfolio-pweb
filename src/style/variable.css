@@ -1,0 +1,20 @@
+:root {
+    --bg-color-primary: #6FBFFF;
+    --bg-color-secondary: #2C3E50;
+    --bg-color-thirty: #367CFF;
+    --bg-color-fourty: #BDC3C7;
+  
+    --text-color-primary: #2C3E50;
+    --text-color-secondary: #367CFF;
+    --text-color-thirty: #828282;
+  
+    --size-1: 0.5rem;
+    --size-2: 1rem;
+    --size-3: 1.5rem;
+    --size-4: 2rem;
+    --size-5: 2.5rem;
+    --size-6: 3rem;
+    --size-7: 3.5rem;
+    --size-8: 4rem;
+  }
+  

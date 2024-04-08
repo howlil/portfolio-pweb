@@ -1,0 +1,22 @@
+@import 'components/navbar.css';
+@import 'pages/hero.css';
+@import 'pages/about.css';
+@import 'pages/education.css';
+@import 'pages/skill.css';
+@import 'pages/project.css';
+@import 'pages/experience.css';
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica, sans-serif;
+    background-color: #B9DFFF;
+}
+*{
+ /* border: 1px solid black; */
+}
+.layout-web{
+  margin: 0 auto;
+  padding: 0 10rem;
+}
