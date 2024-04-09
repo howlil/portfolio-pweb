@@ -16,23 +16,36 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    const navLinks = document.querySelectorAll(".nav-bar a");
-    const sections = document.querySelectorAll("section");
-  
-    function changeLinkState() {
-      let index = sections.length;
-  
-      while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
-  
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (sections[index] && sections[index].getAttribute('id') === link.getAttribute('href').substring(1)) {
-          link.classList.add("active");
-        }
-      });
+  const navLinks = document.querySelectorAll(".nav-bar a");
+  const sections = document.querySelectorAll("section");
+
+  function changeLinkState() {
+    let index = sections.length;
+
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (
+        sections[index] &&
+        sections[index].getAttribute("id") ===
+          link.getAttribute("href").substring(1)
+      ) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  changeLinkState();
+  window.addEventListener("scroll", changeLinkState);
+});
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  let paragraphs = document.querySelectorAll(".card-body p");
+  paragraphs.forEach((p) => {
+    let words = p.innerText.split(" ");
+    if (words.length > 25) {
+      p.innerText = words.slice(0, 25).join(" ") + "...";
     }
-  
-    changeLinkState();
-    window.addEventListener("scroll", changeLinkState);
   });
-  
+});

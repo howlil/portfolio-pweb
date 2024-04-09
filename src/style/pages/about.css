@@ -1,6 +1,4 @@
-.about{
-    height:max-content;
-}
+
 
 .about-body{
     margin-top: 4rem;
@@ -49,8 +47,4 @@
 .bt{
     border-bottom: 4px solid var(--bg-color-thirty);
     width: 4rem;
-}
-
-.container-about{
-    padding: 4rem 0;
 }

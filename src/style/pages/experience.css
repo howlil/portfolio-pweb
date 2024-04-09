@@ -12,43 +12,50 @@
   .ex-list::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 21px;
     top: 0;
     bottom: 0;
     width: 2px; 
-    background: #e2e2e2; 
+    background-image: linear-gradient(to right bottom, #B9DFFF, #004f9a);
   }
   
-  .ex-list li {
-    position: relative;
-    margin-bottom: 15px;
-    padding-left: 60px; /* Provides space for the timeline and icon */
+  .ex-list .item-list {
+    margin-bottom: 1.5rem;
+    padding-left: 5rem; 
+    padding-right: 5rem;
   }
   
-  .ex-list li::before {
+  .ex-list .item-list::before {
     content: '';
     display: block;
     position: absolute;
-    left: 12px; /* Center the icon on the timeline */
+    left: 12px; 
     top: 0;
-    height: 15px; /* Height of the icon container */
-    width: 15px; /* Width of the icon container */
+    height: 15px; 
+    width: 15px;
+    background-image: linear-gradient(to right, #1e84d8, #83bdf3);
+    border: 2px solid #8fe3ffe6;
     border-radius: 50%;
-    background-color: rgb(48, 123, 230); /* Color of the timeline icon */
-    border: 3px solid #0c11a5; /* Border of the timeline icon */
   }
   
   .ex-list h4 {
+    font-size: 18px;
     margin: 0;
-    color: #007BFF;
+    color: var(--text-color-primary);
   }
   
   .ex-list span {
-    font-style: italic;
-    font-size: 16px; /* Example font size for dates */
+    font-size: 14px;
+    color: rgb(71, 79, 92);
   }
   
   .ex-list p {
-    margin: 5px 0 0;
-    color: #666;
+    margin:0;
+    font-size: 14px;
+    color: var(--text-color-primary);
+  }
+
+ .ex-list .expert{
+    margin-top: 12px;
+    color: rgb(38, 56, 173);
   }
