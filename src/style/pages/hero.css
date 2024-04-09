@@ -3,7 +3,7 @@
     min-height: 100vh;
     position: relative;
     z-index: -2;
-    background-image: linear-gradient(to bottom, #B9DFFF, #FFFFFF);
+    background-image: linear-gradient(to bottom, #B9DFFF, #eaf5ff);
     border-bottom-left-radius: 64px;
     border-bottom-right-radius: 64px;
 
@@ -17,13 +17,29 @@
     font-weight: 500;
 }
 
+@keyframes slideGradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+
 .gradient-text {
     font-weight: bold;
-    background-image: linear-gradient(to bottom, #90c1f5, #4384fc);
+    background-image: linear-gradient(to right, #a4cdf8, #0f58dd);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     display: inline-block;
+    animation: slideGradient 3s ease-in-out infinite;
+    background-size: 200% 200%;
+
+
 }
 
 
@@ -146,3 +162,5 @@
     rotate: -8deg;
     width: 40px;
 }
+
+

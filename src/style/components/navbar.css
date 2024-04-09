@@ -3,26 +3,32 @@
 header {
     position: fixed;
     top: 0;
+
     z-index: 1000;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(15px);
     width: 100%;
 }
+
 
 .nav-section {
     display: flex;
-    justify-content: space-around;
+    
+    justify-content: space-between;
     width: 100%;
     align-items: center;
 }
-
-.nav-logo img{
+.nav-wrap{
+    padding: 0 7rem;
+}
+.nav-logo img {
     display: block;
 }
 
-ul li{
-  list-style-type: none;
+ul li {
+    list-style-type: none;
 }
-ul{
+
+ul {
     display: flex;
 }
 
@@ -31,15 +37,49 @@ ul{
     color: var(--text-color-primary);
     font-size: 1.25rem;
     padding: 1.25rem 1rem;
-    transition: background-color 0.3s ease-in-out;
-    -webkit-transition: background-color 0.3s ease-in-out;
-    -moz-transition: background-color 0.3s ease-in-out;
-    -ms-transition: background-color 0.3s ease-in-out;
-    -o-transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-bar a.active {
+    background-image: linear-gradient(to right bottom, #6FBFFF, #367CFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
 }
 
 
-.nav-bar a:hover{
-    background-color: var(--bg-color-thirty);
-    color: white;
+
+.nav-bar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0 ;
+    left: 50%;
+    background-image: linear-gradient(to right, #6fbefff3, #367CFF,#6fbeffe1);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.nav-bar a:hover::after,
+.nav-bar a.active::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0%);
 }

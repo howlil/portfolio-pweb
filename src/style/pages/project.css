@@ -1,0 +1,10 @@
+.project{
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    top: 20px;
+    border-top: 2px solid white;
+    background-image: linear-gradient(to top, #B9DFFF, #eaf5ffc1);
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+}

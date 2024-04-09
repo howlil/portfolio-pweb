@@ -1,14 +1,47 @@
 .about{
-    height: max-content;
+    height:max-content;
 }
 
 .about-body{
     margin-top: 4rem;
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   gap: 0.75rem;
+    grid-template-columns: 1fr 1fr;
 }
+.col1 h1{
+    font-size: var(--size-5);
+    margin: 0;
+    margin-bottom:2rem;
+    color: var(--text-color-primary);
+
+}
+.sosmed{
+    display: flex;
+    gap: 0.75rem;
+  
+}
+.sosmed a{
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+}
+.sosmed a:hover{
+    scale: 1.09;
+}
+
+.col2 p{
+    margin: 0;
+    color: var(--text-color-primary);
+    line-height:1.75rem;
+}
+
+
+
 .title{
     margin: 0;
+    color: var(--text-color-primary);
     text-align: center;
     font-size: var(--size-5);
 

@@ -1,0 +1,54 @@
+
+.ex-body {
+    padding:1rem 3rem;
+  }
+  
+  .ex-list {
+    list-style: none;
+    padding: 0;
+    position: relative; 
+  }
+  
+  .ex-list::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background: #e2e2e2; 
+  }
+  
+  .ex-list li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 60px; /* Provides space for the timeline and icon */
+  }
+  
+  .ex-list li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 12px; /* Center the icon on the timeline */
+    top: 0;
+    height: 15px; /* Height of the icon container */
+    width: 15px; /* Width of the icon container */
+    border-radius: 50%;
+    background-color: rgb(48, 123, 230); /* Color of the timeline icon */
+    border: 3px solid #0c11a5; /* Border of the timeline icon */
+  }
+  
+  .ex-list h4 {
+    margin: 0;
+    color: #007BFF;
+  }
+  
+  .ex-list span {
+    font-style: italic;
+    font-size: 16px; /* Example font size for dates */
+  }
+  
+  .ex-list p {
+    margin: 5px 0 0;
+    color: #666;
+  }

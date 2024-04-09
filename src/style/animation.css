@@ -1,0 +1,24 @@
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+}
+  }
+  
+
+  .orbit-logo {
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+}
+.icons{
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+
+
+}
