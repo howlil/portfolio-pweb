@@ -4,8 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const smoothScroll = (event) => {
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute("href");
+    const targetSection = document.querySelector(targetId);
+
+    const headerOffset = 70; // Height of the fixed header or any other offset you have
+    const elementPosition = targetSection.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
     window.scrollTo({
-      top: document.querySelector(targetId).offsetTop,
+      top: offsetPosition,
       behavior: "smooth",
     });
   };
@@ -15,30 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  const navLinks = document.querySelectorAll(".nav-bar a");
-  const sections = document.querySelectorAll("section");
 
-  function changeLinkState() {
-    let index = sections.length;
 
-    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
 
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (
-        sections[index] &&
-        sections[index].getAttribute("id") ===
-          link.getAttribute("href").substring(1)
-      ) {
-        link.classList.add("active");
-      }
-    });
-  }
 
-  changeLinkState();
-  window.addEventListener("scroll", changeLinkState);
-});
 
 document.addEventListener("DOMContentLoaded", (event) => {
   let paragraphs = document.querySelectorAll(".card-body p");
@@ -48,4 +34,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
       p.innerText = words.slice(0, 25).join(" ") + "...";
     }
   });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navBar = document.querySelector(".nav-bar");
+  const navLinks = document.querySelectorAll('.nav-bar a');
+
+
+  hamburger.addEventListener("click", function() {
+      navBar.classList.toggle("active");
+  });
+
+  navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            if(navBar.classList.contains("active")) {
+                navBar.classList.remove("active");
+            }
+        });
+    });
 });

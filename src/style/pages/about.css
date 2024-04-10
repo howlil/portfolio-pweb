@@ -48,3 +48,59 @@
     border-bottom: 4px solid var(--bg-color-thirty);
     width: 4rem;
 }
+
+/* Base styles for .about section */
+/* Add your existing styles here */
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) { /* For devices up to 768px wide */
+    .about-body {
+        grid-template-columns: 1fr; /* Stack the columns on top of each other */
+        gap: 1.5rem;
+    }
+
+    .col1 h1, .col2 p {
+        font-size: var(--size-4); /* Adjust font size if necessary */
+    }
+
+    .sosmed a {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 480px) {
+    .about-body {
+        gap: 1rem;
+    }
+
+    .col1 h1 {
+        font-size: var(--size-3);
+        margin-bottom: 1rem; 
+        text-align: center;
+    }
+
+    .col2 p {
+        font-size: var(--size-2);
+        text-align: justify; 
+        margin-top: 2rem;
+    }
+
+    .sosmed {
+        justify-content: center;
+        gap: 1.5rem; 
+    }
+
+    .sosmed a {
+        width: 36px; 
+        height: 36px;
+    }
+
+    .title {
+        font-size: var(--size-5); 
+    }
+
+    .bt {
+        width: 3rem; 
+        margin: 0 auto;
+    }
+}

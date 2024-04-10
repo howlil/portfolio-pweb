@@ -164,3 +164,115 @@
 }
 
 
+
+@media (max-width: 1024px) { 
+    .orbit {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    .bits {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .bitss {
+        width: 36rem;
+        height: 36rem;
+    }
+
+    .hero-div h1 {
+        line-height: 2.5rem;
+        font-size: var(--size-5);
+    }
+}
+
+@media (max-width: 768px) { /* For mobile devices */
+
+  .hero{
+    height:max-content;
+  }
+    .hero-div h1 {
+        font-size: var(--size-4);
+        line-height: 2rem;
+    }
+
+    .orbit {
+        width: 16rem;
+        height: 16rem;
+        display: none;
+    }
+
+ 
+
+  
+    .orbit-logo{
+        width: 15rem;
+        margin-top: 3rem;
+    }
+    
+.nx {
+    right: 100px;
+    top: -50px;
+    rotate: -15deg;
+    width: 48px;
+}
+.ex {
+    right: 120px;
+    top: 140px;
+    rotate: 7deg;
+    width: 48px;
+}
+.sb {
+    right: 0px;
+    top: 20px;
+    rotate: -15deg;
+    width: 36px;
+}
+
+.vt{
+    left: 110px;
+    top: -30px;
+    rotate: 5deg;
+    width: 36px;
+}
+.pg {
+    right: 100px;
+    top: 320px;
+    rotate: -10deg;
+    width: 48px;
+}
+.pm {
+    right: 0px;
+    top: 300px;
+    rotate: 5deg;
+    width: 36px;
+}
+.ts {
+    left: 120px;
+    top: 140px;
+
+    rotate: 8deg;
+    width: 36px;
+}
+
+.rj {
+    left: 120px;
+    top: 50px;
+    rotate: -15deg;
+    width: 48px;
+}
+.js {
+    left: 110px;
+    top: 220px;
+    rotate: -8deg;
+    width: 36px;
+}
+.tw {
+    left: 110px;
+    top: 360px;    
+    rotate: -8deg;
+    width: 40px;
+}
+}
+

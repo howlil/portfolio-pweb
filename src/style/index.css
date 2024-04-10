@@ -24,6 +24,14 @@ body {
 }
 .layout-web{
   margin: 0 auto;
-  padding: 0 7rem;
+  padding: 0 4rem;
 }
 
+@media (max-width: 500px) {
+  .layout-web{
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+}
+
+}
