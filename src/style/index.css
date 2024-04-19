@@ -19,9 +19,7 @@ body {
     background-color: #B9DFFF;
 
 }
-*{
- /* border: 1px solid black; */
-}
+
 .layout-web{
   margin: 0 auto;
   padding: 0 4rem;
@@ -34,4 +32,3 @@ body {
   }
 }
 
-}
